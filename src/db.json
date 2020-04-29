@@ -1,0 +1,55 @@
+{
+  "fisherman": [
+    {
+      "firstName": "John",
+      "lastName": "Doe",
+      "certificateNumber": 1,
+      "address": "",
+      "phone": "0101",
+      "email": "john@test.com"
+    }
+  ],
+  "species": [
+    {
+      "id": 1,
+      "name": "catfish"
+    }
+  ],
+  "baits": [
+    {
+      "id": 1,
+      "name": "insect"
+    },
+    {
+      "id": 2,
+      "name": "artificial"
+    }
+  ],
+  "fishingPoles": [
+    {
+      "id": 1,
+      "name": "Fly Rods"
+    }
+  ],
+  "techniques": [
+    {
+      "id": 1,
+      "name": ""
+    }
+  ],
+  "location": [
+    {
+      "id": 1,
+      "name": "lake",
+      "coordinates": "n12e24"
+    }
+  ],
+  "catches": [
+    {
+      "fishermanId": 1,
+      "speciesId": 1,
+      "location": 1,
+      "weight": 100
+    }
+  ]
+}
