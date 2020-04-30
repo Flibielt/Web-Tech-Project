@@ -2,16 +2,16 @@ import dispatcher from "../AppDispatcher";
 
 class CatchAction {
 
-    newCatch(item) {
+    newCatch(newCatch) {
         dispatcher.handleViewAction({
             commandType : 'INSERT_CATCH',
-            item : item
+            newCatch : newCatch
         })
     }
 
-    getCatch(fishermanId) {
+    getCatches(fishermanId) {
         dispatcher.handleViewAction({
-            commandType : 'GET_CATCH',
+            commandType : 'GET_CATCHES',
             fishermanId : fishermanId
         })
     }
