@@ -24,7 +24,23 @@ generateFisherman = (id) => {
     }
 };
 
-let fishermans = [];
+let fishermen = [];
 for (let i = 0; i < COUNT_OF_FISHERMAN; i++) {
-    fishermans.push(generateFisherman(i));
+    fishermen.push(generateFisherman(i));
+}
+
+generateCatch = (id) => {
+    return {
+        id: id,
+        timestamp: faker.date.past(Math.floor(Math.random() * 10)),
+        location: faker.address.city(),
+        weight: faker.random.number(),
+        species: faker.random.word(),
+        fishermanId: faker.random.number({min:0, max:COUNT_OF_FISHERMAN})
+    };
+};
+
+let catches = [];
+for (let i = 0; i < COUNT_OF_CATCHES; i++) {
+    catches.push(generateCatch(i));
 }
