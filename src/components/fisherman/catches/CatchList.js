@@ -13,7 +13,7 @@ class CatchList extends Component {
 
     onChangeOfCatchList() {
         this.setState({
-            catches : catchStore._catch
+            catches : catchStore._catches
         })
     }
 
