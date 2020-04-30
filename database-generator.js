@@ -44,3 +44,9 @@ let catches = [];
 for (let i = 0; i < COUNT_OF_CATCHES; i++) {
     catches.push(generateCatch(i));
 }
+
+fs.writeFile(
+    'database.fake.json',
+    JSON.stringify({fishermen: fishermen, catches: catches}),
+    (err)=>{console.log(err)}
+);
