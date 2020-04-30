@@ -18,11 +18,11 @@ class CatchList extends Component {
     }
 
     componentDidMount() {
-        catchStore.addChangeListener(this.onChangeOfCatchList());
+        catchStore.addChangeListener(this.onChangeOfCatchList);
     }
 
     componentWillUnmount() {
-        catchStore.removeChangeListener(this.onChangeOfCatchList());
+        catchStore.removeChangeListener(this.onChangeOfCatchList);
     }
 
     render() {
