@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 
 import Layout from "./components/Layout";
 
@@ -7,9 +7,6 @@ function App() {
   return (
     <div className="App">
       <Layout>
-        <div>
-          Fisherman's log
-        </div>
       </Layout>
     </div>
   );
