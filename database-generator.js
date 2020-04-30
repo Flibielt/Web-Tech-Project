@@ -1,7 +1,7 @@
 const faker = require('faker');
 const fs = require('fs');
 
-const COUNT_OF_FIHSERMAN = 5;
+const COUNT_OF_FISHERMAN = 5;
 const COUNT_OF_CATCHES = 20;
 
 generateFisherman = (id) => {
@@ -25,6 +25,6 @@ generateFisherman = (id) => {
 };
 
 let fishermans = [];
-for (let i = 0; i < COUNT_OF_FIHSERMAN; i++) {
+for (let i = 0; i < COUNT_OF_FISHERMAN; i++) {
     fishermans.push(generateFisherman(i));
 }
