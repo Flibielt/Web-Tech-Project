@@ -36,3 +36,5 @@ class FishermanAction {
         });
     }
 }
+
+export default new FishermanAction();
