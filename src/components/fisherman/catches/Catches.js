@@ -1,7 +1,10 @@
-import React, {Component, Fragment} from 'react';
+import React, {Fragment} from 'react';
 
-class Catches extends Component {
+import FishCatch from './fishCatch/FishCatch';
+import {Button, Table, Modal, Form} from 'react-bootstrap';
+
+const catches = (props) => {
 
 }
 
-export default Catches;
+export default catches;
