@@ -21,3 +21,23 @@ class CatchStore extends EventEmitter {
 }
 
 const catchStore = new CatchStore();
+
+dispatcher.register((action) => {
+    if (action.command.commandType === 'INSERT_CATCH') {
+        let newCatch = action.command.newCatch;
+        newCatch.id = Math.round(Math.random() * 1000);
+        catchStore._catch.push(newCatch);
+        catchStore.emitChange();
+    } else if (action.command.commandType === 'GET_CATCHES') {
+        axios.get("/fisherman/" + action.command.fishermanId + "/catches")
+            .then((response) => {
+                catchStore._catch = response.data;
+                catchStore.emitChange();
+            })
+            .catch((err) => {
+                console.log(err);
+            });
+    }
+})
+
+export default catchStore;
