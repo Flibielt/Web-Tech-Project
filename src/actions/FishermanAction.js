@@ -2,10 +2,10 @@ import dispatcher from "../AppDispatcher";
 
 class FishermanAction {
 
-    newFisherman(item) {
+    newFisherman(fisherman) {
         dispatcher.handleViewAction({
             commandType : 'INSERT_FISHERMAN',
-            item : item
+            fisherman : fisherman
         });
     }
 
