@@ -9,6 +9,13 @@ class FishermanAction {
         });
     }
 
+    updateFisherman(fisherman) {
+        dispatcher.handleViewAction({
+            commandType : 'UPDATE_FISHERMAN',
+            fisherman : fisherman
+        })
+    }
+
     getFisherman(id) {
         dispatcher.handleViewAction({
             commandType : 'GET_FISHERMAN',

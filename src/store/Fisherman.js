@@ -37,6 +37,9 @@ dispatcher.register((action) => {
             .catch((err) => {
                 console.log(err);
             });
+    } else if (action.command.commandType === 'UPDATE_FISHERMAN') {
+        fisherman._fishermen.push(action.command.fisherman);
+        fisherman.emitChange();
     }
 })
 
