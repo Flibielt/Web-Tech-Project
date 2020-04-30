@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import catchStore from "../../../store/CatchStore";
-import CatchAction from "../../../actions/CatchAction";
+import FishCatch from "./fishCatch/FishCatch";
 
 class CatchList extends Component {
     constructor(props, context) {
@@ -23,6 +23,32 @@ class CatchList extends Component {
 
     componentWillUnmount() {
         catchStore.removeChangeListener(this.onChangeOfCatchList());
+    }
+
+    render() {
+        return (
+            <table className="table table-bordered table-striped">
+                <thead>
+                <tr>
+                    <th>Location</th>
+                    <th>Timestamp</th>
+                    <th>Species</th>
+                    <th>Weight</th>
+                </tr>
+                </thead>
+                <tbody>
+                {
+                    this.state.catches.map((fishCatch)=>{
+                        return(
+                            <FishCatch
+                                catch = {fishCatch}
+                                />
+                        );
+                    })
+                }
+                </tbody>
+            </table>
+        );
     }
 }
 
