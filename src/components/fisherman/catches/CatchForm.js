@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import CatchAction from "../../../actions/CatchAction";
 
-class Catches extends Component {
+class CatchForm extends Component {
     constructor(props, context) {
         super(props, context);
         this.state={
@@ -57,4 +57,4 @@ class Catches extends Component {
     }
 }
 
-export default Catches;
+export default CatchForm;
