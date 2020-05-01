@@ -289,6 +289,22 @@
       "id": 675,
       "fishermanId": 1,
       "timestamp": "2020-05-01T14:57:19.400Z"
+    },
+    {
+      "location": "Lake Laogai",
+      "weight": "420",
+      "species": "catfish",
+      "id": 1000,
+      "fishermanId": 1,
+      "timestamp": "2020-05-01T15:25:16.013Z"
+    },
+    {
+      "fishermanId": 1,
+      "location": "Lake Laogai",
+      "weight": "123",
+      "species": "pike",
+      "id": 250,
+      "timestamp": "2020-05-01T15:29:10.300Z"
     }
   ]
 }
