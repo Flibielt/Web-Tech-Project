@@ -28,7 +28,6 @@ dispatcher.register((action) => {
     if (action.command.commandType === 'INSERT_CATCH') {
         let newCatch = action.command.newCatch;
         newCatch.id = Math.round(Math.random() * 1000);
-        newCatch.fishermanId = 1;
         newCatch.timestamp = new Date();
         axios.post(DATABASE_BASE_URL + "/catches", newCatch)
             .then((response) => {

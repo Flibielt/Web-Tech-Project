@@ -47,8 +47,8 @@ class FishermanInfo extends Component{
                     <Profile fisherman ={this.state.fisherman}/>
                 </TabPanel>
                 <TabPanel className="m-3">
-                    <CatchForm/>
-                    <CatchList/>
+                    <CatchForm fishermanId = {this.state.fisherman.id}/>
+                    <CatchList fishermanId = {this.state.fisherman.id}/>
                 </TabPanel>
             </Tabs>
         );

@@ -5,6 +5,7 @@ class CatchForm extends Component {
     constructor(props, context) {
         super(props, context);
         this.state={
+            fishermanId: this.props.fishermanId,
             location : '',
             weight : 1,
             species : ''
