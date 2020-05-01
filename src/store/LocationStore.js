@@ -26,7 +26,7 @@ const locationStore = new LocationStore();
 
 dispatcher.register((action) => {
     if (action.command.commandType === 'GET_LOCATIONS') {
-        axios.get(DATABASE_BASE_URL + "/locations")
+        axios.get(DATABASE_BASE_URL + "/locations?_sort=lastMonthCatches&_order=desc")
             .then((response) => {
                 locationStore._locations = response.data;
                 locationStore.emitChange();
