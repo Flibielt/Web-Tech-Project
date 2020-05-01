@@ -1,10 +1,12 @@
 import React, {Component} from 'react';
 import catchStore from "../../../store/CatchStore";
 import FishCatch from "./fishCatch/FishCatch";
+import CatchAction from "../../../actions/CatchAction";
 
 class CatchList extends Component {
     constructor(props, context) {
         super(props, context);
+        CatchAction.getCatches(this.props.fishermanId);
         this.state = {
             catches : []
         };
