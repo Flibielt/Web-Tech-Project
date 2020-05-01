@@ -41,15 +41,28 @@ class CatchForm extends Component {
                         type="number"
                         value={this.state.weight}
                         onChange={(e)=>{
-                            this.setState({weight : e.target.value});
+                            if (e.target.value > 0) {
+                                this.setState({weight: e.target.value});
+                            }
                         }}
                     /></td>
                 </tr>
                 <tr>
-                    <td><button
-                        className="btn btn-info"
-                        onClick={()=>{CatchAction.newCatch(this.state)}}
-                    >Add</button></td>
+                    <td>
+
+                    </td>
+                    <td>
+                        <button
+                        className="btn btn-primary btn-block"
+                        disabled={
+                            this.state.location.length <= 0 || this.state.species.length <= 0
+                        }
+                        onClick={()=>{
+                            if (this.state.location.length > 0)
+                            CatchAction.newCatch(this.state)
+                        }}
+                        >Add catch</button>
+                    </td>
                 </tr>
                 </tbody>
             </table>
