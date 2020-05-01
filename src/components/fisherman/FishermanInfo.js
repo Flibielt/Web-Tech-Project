@@ -5,20 +5,31 @@ import 'react-tabs/style/react-tabs.css';
 import CatchForm from "./catches/CatchForm";
 import CatchList from "./catches/CatchList";
 import Profile from "./profile/Profile";
+import FishermanAction from "../../actions/FishermanAction";
+import fishermanStore from "../../store/FishermanStore";
 
 class FishermanInfo extends Component{
     constructor(props, context) {
         super(props, context);
+        FishermanAction.getFisherman(1);
         this.state = {
-            fisherman : {
-                firstName : 'John',
-                lastName : 'Doe',
-                equipment : 'Super Fishing pole',
-                bait : 'Fishing bait',
-                techniques: 'Super effective',
-                fishingPoles : 'Fishing pole'
-            }
+            fisherman : {}
         }
+        this.onChangeOfFisherman = this.onChangeOfFisherman.bind(this);
+    }
+
+    onChangeOfFisherman() {
+        this.setState({
+            fisherman : fishermanStore._fishermen
+        })
+    }
+
+    componentDidMount() {
+        fishermanStore.addChangeListener(this.onChangeOfFisherman)
+    }
+
+    componentWillUnmount() {
+        fishermanStore.removeChangeListener(this.onChangeOfFisherman)
     }
 
     render() {
