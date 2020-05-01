@@ -1,1 +1,286 @@
-{"fishermen":[{"id":1,"firstName":"Kyra","lastName":"Crona","phone":"1-355-975-1589 x48341","techniques":"est eaque amet","equipment":"tempora aliquid a","fishingPoles":"velit sunt dolorem","bait":"tenetur in et","address":{"zipCode":"65553","street":"Adams Garden","city":"South Willisland","houseNumber":3}},{"id":2,"firstName":"Winona","lastName":"Larson","phone":"155-314-5206","techniques":"commodi voluptatibus porro","equipment":"quis sequi non","fishingPoles":"sed eveniet libero","bait":"consectetur rem incidunt","address":{"zipCode":"21023-3689","street":"Elsie Landing","city":"Kenyonburgh","houseNumber":7}},{"id":3,"firstName":"Emanuel","lastName":"Kautzer","phone":"1-759-128-9742","techniques":"accusamus maxime ut","equipment":"aut sit doloribus","fishingPoles":"atque dignissimos sed","bait":"laboriosam reiciendis molestiae","address":{"zipCode":"41050-5800","street":"Matilda Tunnel","city":"New Aaronberg","houseNumber":7}},{"id":4,"firstName":"Carol","lastName":"Bayer","phone":"(077) 677-7816 x496","techniques":"vel non temporibus","equipment":"vero non facere","fishingPoles":"eos adipisci delectus","bait":"esse officiis placeat","address":{"zipCode":"09884-6302","street":"Hansen Flats","city":"Lamontport","houseNumber":9}},{"id":5,"firstName":"Sasha","lastName":"Osinski","phone":"(464) 046-3521 x0846","techniques":"molestiae voluptas unde","equipment":"aliquid ratione qui","fishingPoles":"et aut sapiente","bait":"accusamus fugiat sunt","address":{"zipCode":"42560","street":"Joana Place","city":"Johnsstad","houseNumber":5}}],"catches":[{"id":0,"timestamp":"2017-11-02T08:42:19.420Z","location":"North Myrtle","weight":27052,"species":"asynchronous","fishermanId":6},{"id":1,"timestamp":"2015-06-05T05:49:13.357Z","location":"Eltontown","weight":4993,"species":"Small","fishermanId":2},{"id":2,"timestamp":"2019-10-06T16:07:39.563Z","location":"Kesslerfurt","weight":39099,"species":"Fantastic","fishermanId":6},{"id":3,"timestamp":"2019-05-18T07:58:32.254Z","location":"New Annabel","weight":22882,"species":"ADP","fishermanId":6},{"id":4,"timestamp":"2019-09-28T18:44:42.809Z","location":"New Dejaborough","weight":25375,"species":"Money Market Account","fishermanId":6},{"id":5,"timestamp":"2017-02-21T10:31:29.187Z","location":"Port Tomland","weight":82974,"species":"Fresh","fishermanId":3},{"id":6,"timestamp":"2018-08-30T14:40:13.408Z","location":"Clovisborough","weight":91408,"species":"Common","fishermanId":3},{"id":7,"timestamp":"2013-09-26T11:50:10.615Z","location":"South Orlandmouth","weight":49940,"species":"International","fishermanId":2},{"id":8,"timestamp":"2020-01-15T00:27:17.724Z","location":"Grimesfort","weight":20786,"species":"Representative","fishermanId":2},{"id":9,"timestamp":"2019-12-10T23:26:01.445Z","location":"Adonisborough","weight":31697,"species":"Gorgeous Plastic Towels","fishermanId":5},{"id":10,"timestamp":"2020-03-16T05:14:13.967Z","location":"Lake Adelineland","weight":31816,"species":"Keys","fishermanId":1},{"id":11,"timestamp":"2019-12-23T04:01:39.580Z","location":"Swaniawskitown","weight":73190,"species":"Baby","fishermanId":4},{"id":12,"timestamp":"2018-01-24T00:38:14.237Z","location":"Juliefort","weight":6004,"species":"neural","fishermanId":4},{"id":13,"timestamp":"2013-09-22T23:38:55.430Z","location":"Jeremyborough","weight":56751,"species":"digital","fishermanId":4},{"id":14,"timestamp":"2017-02-23T00:33:26.901Z","location":"South Alexisland","weight":24224,"species":"Junction","fishermanId":2},{"id":15,"timestamp":"2017-11-18T19:01:51.964Z","location":"Lake Karianneport","weight":83558,"species":"Refined Plastic Hat","fishermanId":1},{"id":16,"timestamp":"2015-05-30T22:02:43.712Z","location":"Lake Ellenland","weight":39388,"species":"Point","fishermanId":4},{"id":17,"timestamp":"2019-08-18T16:26:21.276Z","location":"Hirthefort","weight":61747,"species":"azure","fishermanId":1},{"id":18,"timestamp":"2019-12-11T10:07:37.774Z","location":"West Jakob","weight":51349,"species":"Tennessee","fishermanId":4},{"id":19,"timestamp":"2019-07-14T23:58:09.644Z","location":"New Wyattberg","weight":68556,"species":"Versatile","fishermanId":5}],"locations":[{"id":1,"name":"Bauchborough","owner":"Money Market Account","lastMonthCatches":69},{"id":2,"name":"Shemarton","owner":"Massachusetts","lastMonthCatches":47},{"id":3,"name":"New Sabryna","owner":"Investment Account","lastMonthCatches":67},{"id":4,"name":"Torphybury","owner":"platforms","lastMonthCatches":12},{"id":5,"name":"South Cornellport","owner":"Human","lastMonthCatches":81}]}
+{
+  "fishermen": [
+    {
+      "id": 1,
+      "firstName": "Kyra",
+      "lastName": "Crona",
+      "phone": "1-355-975-1589 x48341",
+      "techniques": "est eaque amet",
+      "equipment": "tempora aliquid a",
+      "fishingPoles": "velit sunt dolorem",
+      "bait": "tenetur in et",
+      "address": {
+        "zipCode": "65553",
+        "street": "Adams Garden",
+        "city": "South Willisland",
+        "houseNumber": 3
+      }
+    },
+    {
+      "id": 2,
+      "firstName": "Winona",
+      "lastName": "Larson",
+      "phone": "155-314-5206",
+      "techniques": "commodi voluptatibus porro",
+      "equipment": "quis sequi non",
+      "fishingPoles": "sed eveniet libero",
+      "bait": "consectetur rem incidunt",
+      "address": {
+        "zipCode": "21023-3689",
+        "street": "Elsie Landing",
+        "city": "Kenyonburgh",
+        "houseNumber": 7
+      }
+    },
+    {
+      "id": 3,
+      "firstName": "Emanuel",
+      "lastName": "Kautzer",
+      "phone": "1-759-128-9742",
+      "techniques": "accusamus maxime ut",
+      "equipment": "aut sit doloribus",
+      "fishingPoles": "atque dignissimos sed",
+      "bait": "laboriosam reiciendis molestiae",
+      "address": {
+        "zipCode": "41050-5800",
+        "street": "Matilda Tunnel",
+        "city": "New Aaronberg",
+        "houseNumber": 7
+      }
+    },
+    {
+      "id": 4,
+      "firstName": "Carol",
+      "lastName": "Bayer",
+      "phone": "(077) 677-7816 x496",
+      "techniques": "vel non temporibus",
+      "equipment": "vero non facere",
+      "fishingPoles": "eos adipisci delectus",
+      "bait": "esse officiis placeat",
+      "address": {
+        "zipCode": "09884-6302",
+        "street": "Hansen Flats",
+        "city": "Lamontport",
+        "houseNumber": 9
+      }
+    },
+    {
+      "id": 5,
+      "firstName": "Sasha",
+      "lastName": "Osinski",
+      "phone": "(464) 046-3521 x0846",
+      "techniques": "molestiae voluptas unde",
+      "equipment": "aliquid ratione qui",
+      "fishingPoles": "et aut sapiente",
+      "bait": "accusamus fugiat sunt",
+      "address": {
+        "zipCode": "42560",
+        "street": "Joana Place",
+        "city": "Johnsstad",
+        "houseNumber": 5
+      }
+    }
+  ],
+  "catches": [
+    {
+      "id": 0,
+      "timestamp": "2017-11-02T08:42:19.420Z",
+      "location": "North Myrtle",
+      "weight": 27052,
+      "species": "asynchronous",
+      "fishermanId": 6
+    },
+    {
+      "id": 1,
+      "timestamp": "2015-06-05T05:49:13.357Z",
+      "location": "Eltontown",
+      "weight": 4993,
+      "species": "Small",
+      "fishermanId": 2
+    },
+    {
+      "id": 2,
+      "timestamp": "2019-10-06T16:07:39.563Z",
+      "location": "Kesslerfurt",
+      "weight": 39099,
+      "species": "Fantastic",
+      "fishermanId": 6
+    },
+    {
+      "id": 3,
+      "timestamp": "2019-05-18T07:58:32.254Z",
+      "location": "New Annabel",
+      "weight": 22882,
+      "species": "ADP",
+      "fishermanId": 6
+    },
+    {
+      "id": 4,
+      "timestamp": "2019-09-28T18:44:42.809Z",
+      "location": "New Dejaborough",
+      "weight": 25375,
+      "species": "Money Market Account",
+      "fishermanId": 6
+    },
+    {
+      "id": 5,
+      "timestamp": "2017-02-21T10:31:29.187Z",
+      "location": "Port Tomland",
+      "weight": 82974,
+      "species": "Fresh",
+      "fishermanId": 3
+    },
+    {
+      "id": 6,
+      "timestamp": "2018-08-30T14:40:13.408Z",
+      "location": "Clovisborough",
+      "weight": 91408,
+      "species": "Common",
+      "fishermanId": 3
+    },
+    {
+      "id": 7,
+      "timestamp": "2013-09-26T11:50:10.615Z",
+      "location": "South Orlandmouth",
+      "weight": 49940,
+      "species": "International",
+      "fishermanId": 2
+    },
+    {
+      "id": 8,
+      "timestamp": "2020-01-15T00:27:17.724Z",
+      "location": "Grimesfort",
+      "weight": 20786,
+      "species": "Representative",
+      "fishermanId": 2
+    },
+    {
+      "id": 9,
+      "timestamp": "2019-12-10T23:26:01.445Z",
+      "location": "Adonisborough",
+      "weight": 31697,
+      "species": "Gorgeous Plastic Towels",
+      "fishermanId": 5
+    },
+    {
+      "id": 10,
+      "timestamp": "2020-03-16T05:14:13.967Z",
+      "location": "Lake Adelineland",
+      "weight": 31816,
+      "species": "Keys",
+      "fishermanId": 1
+    },
+    {
+      "id": 11,
+      "timestamp": "2019-12-23T04:01:39.580Z",
+      "location": "Swaniawskitown",
+      "weight": 73190,
+      "species": "Baby",
+      "fishermanId": 4
+    },
+    {
+      "id": 12,
+      "timestamp": "2018-01-24T00:38:14.237Z",
+      "location": "Juliefort",
+      "weight": 6004,
+      "species": "neural",
+      "fishermanId": 4
+    },
+    {
+      "id": 13,
+      "timestamp": "2013-09-22T23:38:55.430Z",
+      "location": "Jeremyborough",
+      "weight": 56751,
+      "species": "digital",
+      "fishermanId": 4
+    },
+    {
+      "id": 14,
+      "timestamp": "2017-02-23T00:33:26.901Z",
+      "location": "South Alexisland",
+      "weight": 24224,
+      "species": "Junction",
+      "fishermanId": 2
+    },
+    {
+      "id": 15,
+      "timestamp": "2017-11-18T19:01:51.964Z",
+      "location": "Lake Karianneport",
+      "weight": 83558,
+      "species": "Refined Plastic Hat",
+      "fishermanId": 1
+    },
+    {
+      "id": 16,
+      "timestamp": "2015-05-30T22:02:43.712Z",
+      "location": "Lake Ellenland",
+      "weight": 39388,
+      "species": "Point",
+      "fishermanId": 4
+    },
+    {
+      "id": 17,
+      "timestamp": "2019-08-18T16:26:21.276Z",
+      "location": "Hirthefort",
+      "weight": 61747,
+      "species": "azure",
+      "fishermanId": 1
+    },
+    {
+      "id": 18,
+      "timestamp": "2019-12-11T10:07:37.774Z",
+      "location": "West Jakob",
+      "weight": 51349,
+      "species": "Tennessee",
+      "fishermanId": 4
+    },
+    {
+      "id": 19,
+      "timestamp": "2019-07-14T23:58:09.644Z",
+      "location": "New Wyattberg",
+      "weight": 68556,
+      "species": "Versatile",
+      "fishermanId": 5
+    },
+    {
+      "fishermanId": 1,
+      "location": "Lake Laogai",
+      "weight": "120",
+      "species": "catfish",
+      "id": 894,
+      "timestamp": "2020-05-01T20:18:02.483Z"
+    }
+  ],
+  "locations": [
+    {
+      "id": 1,
+      "name": "Bauchborough",
+      "owner": "Money Market Account",
+      "lastMonthCatches": 69
+    },
+    {
+      "id": 2,
+      "name": "Shemarton",
+      "owner": "Massachusetts",
+      "lastMonthCatches": 47
+    },
+    {
+      "id": 3,
+      "name": "New Sabryna",
+      "owner": "Investment Account",
+      "lastMonthCatches": 67
+    },
+    {
+      "id": 4,
+      "name": "Torphybury",
+      "owner": "platforms",
+      "lastMonthCatches": 12
+    },
+    {
+      "id": 5,
+      "name": "South Cornellport",
+      "owner": "Human",
+      "lastMonthCatches": 81
+    }
+  ]
+}
