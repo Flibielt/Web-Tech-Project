@@ -7,6 +7,20 @@ import CatchList from "./catches/CatchList";
 import Profile from "./profile/Profile";
 
 class FishermanInfo extends Component{
+    constructor(props, context) {
+        super(props, context);
+        this.state = {
+            fisherman : {
+                firstName : 'John',
+                lastName : 'Doe',
+                equipment : 'Super Fishing pole',
+                bait : 'Fishing bait',
+                techniques: 'Super effective',
+                fishingPoles : 'Fishing pole'
+            }
+        }
+    }
+
     render() {
         return (
             <Tabs id={1}>
@@ -23,7 +37,7 @@ class FishermanInfo extends Component{
                     <CatchList/>
                 </TabPanel>
                 <TabPanel>
-                    <Profile/>
+                    <Profile fisherman ={this.state.fisherman}/>
                 </TabPanel>
             </Tabs>
         );
