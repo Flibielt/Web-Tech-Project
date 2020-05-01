@@ -5,7 +5,7 @@ import axios from 'axios';
 
 const DATABASE_BASE_URL = 'http://localhost:3001';
 
-class Fisherman extends EventEmitter {
+class FishermanStore extends EventEmitter {
 
     _fishermen = [];
 
@@ -22,27 +22,28 @@ class Fisherman extends EventEmitter {
     }
 }
 
-const fisherman = new Fisherman();
+const fishermanStore = new FishermanStore();
 
 dispatcher.register((action) => {
     if (action.command.commandType === 'INSERT_FISHERMAN') {
         let newFisherman = action.command.fisherman;
         newFisherman.id = Math.round(Math.random() * 1000);
-        fisherman._fishermen.push(newFisherman);
-        fisherman.emitChange();
+        fishermanStore._fishermen.push(newFisherman);
+        fishermanStore.emitChange();
     } else if (action.command.commandType === 'GET_FISHERMAN') {
-        axios.get(DATABASE_BASE_URL + "/fishermen")
+        axios.get(DATABASE_BASE_URL + "/fishermen/" + action.command.id)
             .then((response) => {
-                fisherman._fishermen = response.data;
-                fisherman.emitChange();
+                console.log(response.data);
+                fishermanStore._fishermen = response.data;
+                fishermanStore.emitChange();
             })
             .catch((err) => {
                 console.log(err);
             });
     } else if (action.command.commandType === 'UPDATE_FISHERMAN') {
-        fisherman._fishermen.push(action.command.fisherman);
-        fisherman.emitChange();
+        fishermanStore._fishermen.push(action.command.fisherman);
+        fishermanStore.emitChange();
     }
 })
 
-export default fisherman;
+export default fishermanStore;
