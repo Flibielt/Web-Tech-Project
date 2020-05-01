@@ -26,6 +26,33 @@ class FishermanList extends Component {
     componentWillUnmount() {
         fishermanStore.removeChangeListener(this.onChangeFishermanList);
     }
+
+    render() {
+        return (
+            <table className="table table-bordered table-striped">
+                <thead>
+                <tr>
+                    <th>IFA ID</th>
+                    <th>Name</th>
+                    <th>Phone</th>
+                    <th>Zipcode</th>
+                    <th>Address</th>
+                </tr>
+                </thead>
+                <tbody>
+                {
+                    this.state.fishermen.map((fisherman) => {
+                        return (
+                            <FishermanBio key={fisherman.id}
+                                          fisherman = {fisherman}
+                                          />
+                        );
+                    })
+                }
+                </tbody>
+            </table>
+        )
+    }
 }
 
 export default FishermanList;
