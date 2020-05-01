@@ -23,3 +23,18 @@ class LocationStore extends EventEmitter {
 }
 
 const locationStore = new LocationStore();
+
+dispatcher.register((action) => {
+    if (action.command.commandType === 'GET_LOCATIONS') {
+        axios.get(DATABASE_BASE_URL + "/locations")
+            .then((response) => {
+                locationStore._locations = response.data;
+                locationStore.emitChange();
+            })
+            .catch((err) => {
+                console.log(err);
+            })
+    }
+})
+
+export default locationStore;
