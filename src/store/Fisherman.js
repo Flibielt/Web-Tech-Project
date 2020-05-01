@@ -3,6 +3,8 @@ import dispatcher from "../AppDispatcher";
 
 import axios from 'axios';
 
+const DATABASE_BASE_URL = 'http://localhost:3001';
+
 class Fisherman extends EventEmitter {
 
     _fishermen = [];
@@ -29,7 +31,7 @@ dispatcher.register((action) => {
         fisherman._fishermen.push(newFisherman);
         fisherman.emitChange();
     } else if (action.command.commandType === 'GET_FISHERMAN') {
-        axios.get("/fishermen")
+        axios.get(DATABASE_BASE_URL + "/fishermen")
             .then((response) => {
                 fisherman._fishermen = response.data;
                 fisherman.emitChange();
