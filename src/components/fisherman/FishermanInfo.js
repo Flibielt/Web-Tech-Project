@@ -26,18 +26,18 @@ class FishermanInfo extends Component{
             <Tabs id={1}>
                 <TabList>
                     <Tab>
-                        Catch
-                    </Tab>
-                    <Tab>
                         Profile
                     </Tab>
+                    <Tab>
+                        Catch
+                    </Tab>
                 </TabList>
-                <TabPanel>
+                <TabPanel className="m-3">
+                    <Profile fisherman ={this.state.fisherman}/>
+                </TabPanel>
+                <TabPanel className="m-3">
                     <CatchForm/>
                     <CatchList/>
-                </TabPanel>
-                <TabPanel>
-                    <Profile fisherman ={this.state.fisherman}/>
                 </TabPanel>
             </Tabs>
         );
