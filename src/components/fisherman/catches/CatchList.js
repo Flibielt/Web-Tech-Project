@@ -42,7 +42,7 @@ class CatchList extends Component {
                 {
                     this.state.catches.map((fishCatch)=>{
                         return(
-                            <FishCatch key={fishCatch.timestamp}
+                            <FishCatch key={fishCatch.id}
                                 catch = {fishCatch}
                                 />
                         );
