@@ -42,8 +42,14 @@ dispatcher.register((action) => {
                 console.log(err);
             });
     } else if (action.command.commandType === 'UPDATE_FISHERMAN') {
-        fishermanStore._fisherman.push(action.command.fisherman);
-        fishermanStore.emitChange();
+        axios.patch(DATABASE_BASE_URL + "/fishermen/" + fishermanStore._fisherman.id, action.command.fisherman)
+            .then((response) => {
+                fishermanStore._fisherman = response.data;
+                fishermanStore.emitChange();
+            })
+            .catch((err) => {
+                console.log(err);
+            })
     } else if (action.command.commandType === 'GET_FISHERMEN') {
         axios.get(DATABASE_BASE_URL + "/fishermen")
             .then((response) => {
