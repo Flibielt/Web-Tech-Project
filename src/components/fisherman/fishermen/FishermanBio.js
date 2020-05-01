@@ -6,8 +6,8 @@ const fishermanBio = (props) => {
             <td>{props.fisherman.id}</td>
             <td>{props.fisherman.firstName} {props.fisherman.lastName}</td>
             <td>{props.fisherman.phone}</td>
-            <td>{props.fisherman.zipCode}</td>
-            <td>{props.fisherman.houseNumber} {props.fisherman.street}, {props.fisherman.city}</td>
+            <td>{props.fisherman.address.zipCode}</td>
+            <td>{props.fisherman.address.houseNumber} {props.fisherman.address.street}, {props.fisherman.address.city}</td>
         </tr>
     )
 }
