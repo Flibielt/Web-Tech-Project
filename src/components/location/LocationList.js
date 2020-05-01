@@ -9,6 +9,21 @@ class LocationList extends Component {
         this.state = {
             locations : []
         }
+        this.onChangeOfLocationList = this.onChangeOfLocationList.bind(this);
+    }
+
+    onChangeOfLocationList() {
+        this.setState({
+            locations : locationStore._locations
+        });
+    }
+
+    componentDidMount() {
+        locationStore.addChangeListener(this.onChangeOfLocationList);
+    }
+
+    componentWillUnmount() {
+        locationStore.removeChangeListener(this.onChangeOfLocationList);
     }
 }
 
