@@ -281,6 +281,14 @@
       "id": 328,
       "fishermanId": 1,
       "timestamp": "2020-05-01T12:02:35.837Z"
+    },
+    {
+      "location": "Debrecen",
+      "weight": "40",
+      "species": "catfish",
+      "id": 675,
+      "fishermanId": 1,
+      "timestamp": "2020-05-01T14:57:19.400Z"
     }
   ]
 }
