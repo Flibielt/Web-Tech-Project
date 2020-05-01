@@ -7,3 +7,5 @@ class LocationAction {
         })
     }
 }
+
+export default new LocationAction();
