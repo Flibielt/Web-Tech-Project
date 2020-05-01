@@ -49,11 +49,10 @@ class CatchForm extends Component {
                 </tr>
                 <tr>
                     <td>
-
                     </td>
                     <td>
                         <button
-                        className="btn btn-primary btn-block"
+                        className="btn btn-primary"
                         disabled={
                             this.state.location.length <= 0 || this.state.species.length <= 0
                         }
