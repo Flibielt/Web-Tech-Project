@@ -7,7 +7,8 @@ import DATABASE_BASE_URL from "./Util";
 
 class FishermanStore extends EventEmitter {
 
-    _fisherman = [];
+    _fisherman = {};
+    _fishermen = [];
 
     emitChange() {
         this.emit('change');
@@ -43,6 +44,16 @@ dispatcher.register((action) => {
     } else if (action.command.commandType === 'UPDATE_FISHERMAN') {
         fishermanStore._fisherman.push(action.command.fisherman);
         fishermanStore.emitChange();
+    } else if (action.command.commandType === 'GET_FISHERMEN') {
+        axios.get(DATABASE_BASE_URL + "/fishermen")
+            .then((response) => {
+                console.log(response.data);
+                fishermanStore._fishermen = response.data;
+                fishermanStore.emitChange();
+            })
+            .catch((err) => {
+                console.log(err);
+            })
     }
 })
 
