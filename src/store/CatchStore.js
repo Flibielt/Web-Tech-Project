@@ -41,7 +41,7 @@ dispatcher.register((action) => {
         catchStore._catches.push(newCatch);
         catchStore.emitChange();
     } else if (action.command.commandType === 'GET_CATCHES') {
-        axios.get(DATABASE_BASE_URL + "/fisherman/" + action.command.fishermanId + "catches")
+        axios.get(DATABASE_BASE_URL + "/fisherman/" + action.command.fishermanId + "/catches")
             .then((response) => {
                 catchStore._catches = response.data;
                 catchStore.emitChange();
