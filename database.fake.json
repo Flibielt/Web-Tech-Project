@@ -1,1 +1,278 @@
-{"fishermen":[{"id":0,"firstName":"Rollin","lastName":"Fisher","phone":"1-164-946-5518","techniques":"ducimus impedit esse","equipment":"expedita vitae voluptatibus","fishingPoles":"voluptatem molestias et","bait":"eos voluptas et","address":{"zipCode":"97265","street":"Korey Lock","city":"North Jamarcus","houseNumber":5}},{"id":1,"firstName":"Jeramie","lastName":"Hand","phone":"175.383.7275","techniques":"et et veritatis","equipment":"repellat provident rerum","fishingPoles":"est illum quia","bait":"quibusdam quibusdam quisquam","address":{"zipCode":"18721-9974","street":"Graham Isle","city":"Beerport","houseNumber":5}},{"id":2,"firstName":"Cristina","lastName":"Walker","phone":"051.813.4702","techniques":"deserunt sit cumque","equipment":"non illo dolorem","fishingPoles":"culpa iusto nam","bait":"delectus id libero","address":{"zipCode":"09744","street":"Renner Avenue","city":"Lake Wellington","houseNumber":8}},{"id":3,"firstName":"Wanda","lastName":"Nikolaus","phone":"1-042-236-7622","techniques":"animi voluptas voluptatem","equipment":"maxime officia reprehenderit","fishingPoles":"similique quod debitis","bait":"odio dolorem numquam","address":{"zipCode":"39285","street":"Muhammad Burgs","city":"East Litzybury","houseNumber":1}},{"id":4,"firstName":"Hattie","lastName":"Hauck","phone":"439.715.7053","techniques":"id occaecati iusto","equipment":"quas eaque eum","fishingPoles":"ut fugit ipsa","bait":"necessitatibus iure qui","address":{"zipCode":"97157-4422","street":"Maeve Flats","city":"Gayhaven","houseNumber":1}}],"catches":[{"id":0,"timestamp":"2019-06-15T10:59:29.744Z","location":"West Katarinaside","weight":15697,"species":"Kenyan Shilling","fishermanId":3},{"id":1,"timestamp":"2020-03-17T23:39:50.170Z","location":"North Bria","weight":1257,"species":"Response","fishermanId":3},{"id":2,"timestamp":"2019-08-21T19:19:08.104Z","location":"O'Konburgh","weight":16564,"species":"JSON","fishermanId":4},{"id":3,"timestamp":"2014-07-21T06:34:21.070Z","location":"Davisborough","weight":23907,"species":"Jewelery","fishermanId":2},{"id":4,"timestamp":"2019-06-20T11:35:03.698Z","location":"Lake Reyhaven","weight":50828,"species":"capacitor","fishermanId":3},{"id":5,"timestamp":"2013-05-24T04:33:44.135Z","location":"Mooreville","weight":93804,"species":"incubate","fishermanId":0},{"id":6,"timestamp":"2018-04-30T12:52:34.639Z","location":"Meaganchester","weight":68182,"species":"French Guiana","fishermanId":3},{"id":7,"timestamp":"2019-06-07T17:17:40.830Z","location":"Jeanneside","weight":47098,"species":"Industrial","fishermanId":4},{"id":8,"timestamp":"2018-02-28T02:38:01.148Z","location":"North Nikostad","weight":33907,"species":"Palladium","fishermanId":1},{"id":9,"timestamp":"2017-07-18T19:57:36.342Z","location":"South Ezekielport","weight":41368,"species":"Orchestrator","fishermanId":0},{"id":10,"timestamp":"2014-05-05T00:03:44.375Z","location":"Alyssonhaven","weight":35953,"species":"withdrawal","fishermanId":0},{"id":11,"timestamp":"2013-09-05T17:36:50.852Z","location":"West Maximo","weight":17407,"species":"California","fishermanId":5},{"id":12,"timestamp":"2013-06-08T20:28:49.977Z","location":"Donatomouth","weight":37593,"species":"bifurcated","fishermanId":5},{"id":13,"timestamp":"2019-11-10T18:18:54.842Z","location":"South Misty","weight":82497,"species":"Bedfordshire","fishermanId":4},{"id":14,"timestamp":"2019-08-15T10:30:39.122Z","location":"Ikeport","weight":75015,"species":"multi-tasking","fishermanId":4},{"id":15,"timestamp":"2019-08-11T09:58:52.754Z","location":"West Evert","weight":43094,"species":"Health","fishermanId":2},{"id":16,"timestamp":"2019-11-30T01:08:33.869Z","location":"East Alene","weight":92173,"species":"Valleys","fishermanId":3},{"id":17,"timestamp":"2020-02-16T14:24:51.560Z","location":"Lake Coty","weight":3188,"species":"synthesize","fishermanId":3},{"id":18,"timestamp":"2019-08-30T20:20:25.993Z","location":"Grantberg","weight":90081,"species":"Accountability","fishermanId":4},{"id":19,"timestamp":"2019-09-18T00:27:35.925Z","location":"East Wavaton","weight":912,"species":"Small Steel Keyboard","fishermanId":2}]}
+{
+  "fishermen": [
+    {
+      "id": 0,
+      "firstName": "Rollin",
+      "lastName": "Fisher",
+      "phone": "1-164-946-5518",
+      "techniques": "ducimus impedit esse",
+      "equipment": "expedita vitae voluptatibus",
+      "fishingPoles": "voluptatem molestias et",
+      "bait": "eos voluptas et",
+      "address": {
+        "zipCode": "97265",
+        "street": "Korey Lock",
+        "city": "North Jamarcus",
+        "houseNumber": 5
+      }
+    },
+    {
+      "id": 1,
+      "firstName": "Jeramie",
+      "lastName": "Hand",
+      "phone": "175.383.7275",
+      "techniques": "et et veritatis",
+      "equipment": "repellat provident rerum",
+      "fishingPoles": "est illum quia",
+      "bait": "quibusdam quibusdam quisquam",
+      "address": {
+        "zipCode": "18721-9974",
+        "street": "Graham Isle",
+        "city": "Beerport",
+        "houseNumber": 5
+      }
+    },
+    {
+      "id": 2,
+      "firstName": "Cristina",
+      "lastName": "Walker",
+      "phone": "051.813.4702",
+      "techniques": "deserunt sit cumque",
+      "equipment": "non illo dolorem",
+      "fishingPoles": "culpa iusto nam",
+      "bait": "delectus id libero",
+      "address": {
+        "zipCode": "09744",
+        "street": "Renner Avenue",
+        "city": "Lake Wellington",
+        "houseNumber": 8
+      }
+    },
+    {
+      "id": 3,
+      "firstName": "Wanda",
+      "lastName": "Nikolaus",
+      "phone": "1-042-236-7622",
+      "techniques": "animi voluptas voluptatem",
+      "equipment": "maxime officia reprehenderit",
+      "fishingPoles": "similique quod debitis",
+      "bait": "odio dolorem numquam",
+      "address": {
+        "zipCode": "39285",
+        "street": "Muhammad Burgs",
+        "city": "East Litzybury",
+        "houseNumber": 1
+      }
+    },
+    {
+      "id": 4,
+      "firstName": "Hattie",
+      "lastName": "Hauck",
+      "phone": "439.715.7053",
+      "techniques": "id occaecati iusto",
+      "equipment": "quas eaque eum",
+      "fishingPoles": "ut fugit ipsa",
+      "bait": "necessitatibus iure qui",
+      "address": {
+        "zipCode": "97157-4422",
+        "street": "Maeve Flats",
+        "city": "Gayhaven",
+        "houseNumber": 1
+      }
+    }
+  ],
+  "catches": [
+    {
+      "id": 0,
+      "timestamp": "2019-06-15T10:59:29.744Z",
+      "location": "West Katarinaside",
+      "weight": 15697,
+      "species": "Kenyan Shilling",
+      "fishermanId": 3
+    },
+    {
+      "id": 1,
+      "timestamp": "2020-03-17T23:39:50.170Z",
+      "location": "North Bria",
+      "weight": 1257,
+      "species": "Response",
+      "fishermanId": 3
+    },
+    {
+      "id": 2,
+      "timestamp": "2019-08-21T19:19:08.104Z",
+      "location": "O'Konburgh",
+      "weight": 16564,
+      "species": "JSON",
+      "fishermanId": 4
+    },
+    {
+      "id": 3,
+      "timestamp": "2014-07-21T06:34:21.070Z",
+      "location": "Davisborough",
+      "weight": 23907,
+      "species": "Jewelery",
+      "fishermanId": 2
+    },
+    {
+      "id": 4,
+      "timestamp": "2019-06-20T11:35:03.698Z",
+      "location": "Lake Reyhaven",
+      "weight": 50828,
+      "species": "capacitor",
+      "fishermanId": 3
+    },
+    {
+      "id": 5,
+      "timestamp": "2013-05-24T04:33:44.135Z",
+      "location": "Mooreville",
+      "weight": 93804,
+      "species": "incubate",
+      "fishermanId": 0
+    },
+    {
+      "id": 6,
+      "timestamp": "2018-04-30T12:52:34.639Z",
+      "location": "Meaganchester",
+      "weight": 68182,
+      "species": "French Guiana",
+      "fishermanId": 3
+    },
+    {
+      "id": 7,
+      "timestamp": "2019-06-07T17:17:40.830Z",
+      "location": "Jeanneside",
+      "weight": 47098,
+      "species": "Industrial",
+      "fishermanId": 4
+    },
+    {
+      "id": 8,
+      "timestamp": "2018-02-28T02:38:01.148Z",
+      "location": "North Nikostad",
+      "weight": 33907,
+      "species": "Palladium",
+      "fishermanId": 1
+    },
+    {
+      "id": 9,
+      "timestamp": "2017-07-18T19:57:36.342Z",
+      "location": "South Ezekielport",
+      "weight": 41368,
+      "species": "Orchestrator",
+      "fishermanId": 0
+    },
+    {
+      "id": 10,
+      "timestamp": "2014-05-05T00:03:44.375Z",
+      "location": "Alyssonhaven",
+      "weight": 35953,
+      "species": "withdrawal",
+      "fishermanId": 0
+    },
+    {
+      "id": 11,
+      "timestamp": "2013-09-05T17:36:50.852Z",
+      "location": "West Maximo",
+      "weight": 17407,
+      "species": "California",
+      "fishermanId": 5
+    },
+    {
+      "id": 12,
+      "timestamp": "2013-06-08T20:28:49.977Z",
+      "location": "Donatomouth",
+      "weight": 37593,
+      "species": "bifurcated",
+      "fishermanId": 5
+    },
+    {
+      "id": 13,
+      "timestamp": "2019-11-10T18:18:54.842Z",
+      "location": "South Misty",
+      "weight": 82497,
+      "species": "Bedfordshire",
+      "fishermanId": 4
+    },
+    {
+      "id": 14,
+      "timestamp": "2019-08-15T10:30:39.122Z",
+      "location": "Ikeport",
+      "weight": 75015,
+      "species": "multi-tasking",
+      "fishermanId": 4
+    },
+    {
+      "id": 15,
+      "timestamp": "2019-08-11T09:58:52.754Z",
+      "location": "West Evert",
+      "weight": 43094,
+      "species": "Health",
+      "fishermanId": 2
+    },
+    {
+      "id": 16,
+      "timestamp": "2019-11-30T01:08:33.869Z",
+      "location": "East Alene",
+      "weight": 92173,
+      "species": "Valleys",
+      "fishermanId": 3
+    },
+    {
+      "id": 17,
+      "timestamp": "2020-02-16T14:24:51.560Z",
+      "location": "Lake Coty",
+      "weight": 3188,
+      "species": "synthesize",
+      "fishermanId": 3
+    },
+    {
+      "id": 18,
+      "timestamp": "2019-08-30T20:20:25.993Z",
+      "location": "Grantberg",
+      "weight": 90081,
+      "species": "Accountability",
+      "fishermanId": 4
+    },
+    {
+      "id": 19,
+      "timestamp": "2019-09-18T00:27:35.925Z",
+      "location": "East Wavaton",
+      "weight": 912,
+      "species": "Small Steel Keyboard",
+      "fishermanId": 2
+    },
+    {
+      "location": "Debrecen",
+      "weight": 1,
+      "species": "catfish",
+      "timestamp": "2020-05-01T08:48:06.990Z",
+      "id": 556,
+      "fishermanId": 1
+    },
+    {
+      "location": "Debrecen",
+      "weight": "50",
+      "species": "pike",
+      "timestamp": "2020-05-01T08:54:09.640Z",
+      "id": 844,
+      "fishermanId": 1
+    },
+    {
+      "location": "Lake Laogai",
+      "weight": "100",
+      "species": "catfish",
+      "timestamp": "2020-05-01T08:59:01.172Z",
+      "id": 524,
+      "fishermanId": 1
+    },
+    {
+      "location": "Lake Laogai",
+      "weight": "20",
+      "species": "pike",
+      "id": 171,
+      "fishermanId": 1,
+      "timestamp": "2020-05-01T08:59:46.809Z"
+    }
+  ]
+}
