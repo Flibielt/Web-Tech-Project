@@ -3,7 +3,7 @@ import dispatcher from "../AppDispatcher";
 
 import axios from 'axios';
 
-const DATABASE_BASE_URL = 'http://localhost:3001';
+import DATABASE_BASE_URL from "./Util";
 
 class LocationStore extends EventEmitter {
 
