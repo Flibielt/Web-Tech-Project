@@ -20,7 +20,7 @@ class FishermanInfo extends Component{
 
     onChangeOfFisherman() {
         this.setState({
-            fisherman : fishermanStore._fishermen
+            fisherman : fishermanStore._fisherman
         })
     }
 
