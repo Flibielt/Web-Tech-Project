@@ -5,6 +5,7 @@ import 'react-tabs/style/react-tabs.css';
 import CatchForm from "./catches/CatchForm";
 import CatchList from "./catches/CatchList";
 import Profile from "./profile/Profile";
+import UpdateProfileForm from "./profile/UpdateProfileForm";
 import FishermanAction from "../../actions/FishermanAction";
 import fishermanStore from "../../store/FishermanStore";
 
@@ -45,6 +46,10 @@ class FishermanInfo extends Component{
                 </TabList>
                 <TabPanel className="m-3">
                     <Profile fisherman ={this.state.fisherman}/>
+                    <h3>
+                        Update profile information
+                    </h3>
+                    <UpdateProfileForm fisherman ={this.state.fisherman}/>
                 </TabPanel>
                 <TabPanel className="m-3">
                     <CatchForm fishermanId = {this.state.fisherman.id}/>
